@@ -1,0 +1,10 @@
+{
+  "name": "fintech-foundations",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "db:up": "docker compose up -d --wait",
+    "db:down": "docker compose down",
+    "test": "pnpm -r --workspace-concurrency=1 test"
+  }
+}
